@@ -12,14 +12,13 @@
 		<!-- STYLE-CSS -->
 		<link rel="stylesheet" href="./css/style.css" />
 
-		<!-- AXIOS -->
-		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
 		<!-- Vue 3 -->
 		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 		<!-- Vue 3 app - Options API -->
-		<script src="./js/app.js" type="text/javascript" defer></script>
+		<!-- <script src="./js/app.js" type="text/javascript" defer></script> -->
+		<!-- AXIOS -->
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<!-- JAVASCRIPT -->
 		<script type="text/Javascript" src="./js/main.js" defer></script>
 	</head>
@@ -27,7 +26,7 @@
 		<div class="wrapper" id="app">
 			<div class="container mt-5">
 				<ul>
-					<li v-for="contact in mail">{{mail}}</li>
+					<li v-for="item in mail">{{ item }}</li>
 				</ul>
 			</div>
 		</div>

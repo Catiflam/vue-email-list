@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
 	data() {
 		return {
-			mail: "",
+			mail: [],
 		};
 	},
 
@@ -12,7 +12,9 @@ createApp({
 			for (let i = 0; i < 10; i++) {
 				axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then((response) => {
 					const randomMail = response.data.response;
-					this.mail = randomMail;
+					this.mail.push(randomMail);
+
+					console.log(randomMail);
 				});
 			}
 		},
